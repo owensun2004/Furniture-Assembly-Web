@@ -17,10 +17,37 @@ body {
   font-variant: small-caps;
 }
 
+/* Modify the container structure */
+.teaser .container.is-max-desktop {
+  max-width: 950px !important; /* Override Bulma's default */
+  width: 100%;
+  padding: 0 20px; /* Add some side spacing */
+}
 
 .teaser .hero-body {
-  padding-top: 0;
-  padding-bottom: 3rem;
+  position: relative;
+  border: 6px solid #66c0ff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; /* Remove all padding */
+}
+
+/* Aspect ratio container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+}
+
+#teaser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Show full video without cropping */
 }
 
 .teaser {
