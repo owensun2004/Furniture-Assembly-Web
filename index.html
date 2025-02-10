@@ -224,6 +224,51 @@
     </div>
 </section>
 
+<!-- Second Section -->
+<div class="container is-max-desktop">
+  <div class="columns is-centered">
+    <div class="column">
+      <h2 class="title is-3 has-text-centered">Assembly Graph Generation Results</h2>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <!-- Image Container -->
+    <div class="column is-one-half" style="display: flex; flex-direction: column; align-items: center;">
+      <img id="imageViewer2" src="./static/images/another_image1.png" alt="Selected Image" 
+           style="max-width: 80%; height: auto; border: 3px solid #66c0ff; border-radius: 20px;">
+      <p style="font-size: 20px; font-weight: bold;">(Left) Input Manual & Scene, (right) Predicted Assembly Graph</p>
+    </div>
+
+    <!-- Controls for Object Selection -->
+    <div class="column is-one-quarter">
+      <!-- Object Name Dropdown -->
+      <div class="dropdown-container" style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
+        <label for="objectName2" style="font-size: 20px; font-weight: bold;">Furniture To Assemble</label>
+        <select id="objectName2" class="custom-select" style="width: 200px; margin-top: 10px;">
+          <option value="./static/images/assembly_graph_bench.png">Bench</option>
+          <option value="./static/images/assembly_graph_chair.png">Chair</option>
+          <!-- <option value="./static/images/another_image3.png">Image 3</option> -->
+        </select>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const selectElement = document.getElementById("objectName2");
+          const imageViewer = document.getElementById("imageViewer2");
+
+          function updateImage() {
+            imageViewer.src = selectElement.value;
+          }
+
+          updateImage();
+          selectElement.addEventListener('change', updateImage);
+        });
+      </script>
+    </div>
+  </div>
+</div>
+
 
 <div class="container is-max-desktop">
   <div class="columns is-centered">
