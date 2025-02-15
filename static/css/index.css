@@ -189,8 +189,21 @@ body {
 .thumbnail-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   max-height: 300px; /* Adjust this to match your video height */
   overflow-y: auto;
   padding-right: 5px; /* Prevents cut-off due to scrollbar */
+}
+
+/* Custom spacing for specific sections */
+.section-assembly {
+  margin-bottom: 5rem; /* More spacing for the assembly section */
+}
+
+.section-real-world {
+  margin-bottom: 5rem; /* Less spacing for the real-world section */
+}
+
+.section-generalize {
+  margin-bottom: 5rem;
 }

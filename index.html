@@ -198,15 +198,12 @@
         
         <!-- Placeholder for the pipeline image -->
         <div class="pipeline-image">
-          <img src="./static/images/pipeline.png" alt="Pipeline Overview" style="max-width: 80%; height: auto;">
+          <img src="./static/images/pipeline.png" alt="Pipeline Overview" style="max-width: 85%; height: auto;">
         </div>
 
-        <div class="content has-text-left" style="max-width: 70%; margin: 0 auto;">
+        <div class="content has-text-centered" style="max-width: 85%; margin: 0 auto;">
           <p>
-            Overview of Manual2Skill: (1) GPT-4o is queried with manual pages to generate a text-based assembly plan, and this
-            plan can be represented as a hierarchical assembly graph. (2) The components’ point clouds, together with the corresponding
-            manual image, are passed through a pose estimation module to predict the target pose for each component. (3) With poses
-            estimated, the system plans the assembly action sequence, and the robot executes the assembly step.
+            Overview of Manual2Skill: (1) GPT-4o is queried with manual pages to generate a text-based assembly plan, and this plan can be represented as a hierarchical assembly graph. (2) The components’ point clouds, together with the corresponding manual image, are passed through a pose estimation module to predict the target pose for each component. (3) With poses estimated, the system plans the assembly action sequence, and the robot executes the assembly step.
           </p>
         </div>
       </div>
@@ -215,7 +212,7 @@
 </section>
 
 <!-- Second Section -->
-<div class="container is-max-desktop">
+<div class="container is-max-desktop section-assembly">
   <div class="columns is-centered">
     <div class="column">
       <h2 class="title is-3 has-text-centered">Assembly Graph Generation Results</h2>
@@ -227,8 +224,8 @@
     <div class="column is-one-half" style="display: flex; flex-direction: column; align-items: center;">
       <img id="imageViewer2" src="./static/images/another_image1.png" alt="Selected Image" 
            style="max-width: 80%; height: auto; border: 3px solid #66c0ff; border-radius: 20px;">
-      <p style="font-size: 20px; font-weight: bold;">(Left) Input Manual & Scene, (right) Predicted Assembly Graph</p>
-      <p style="font-size: 15px;">Explore a real-time demo of VLM Assembly Graph Generation in our upcoming Jupyter Notebook with your OpenAI API Keys. Stay tuned!</p>
+      <p style="font-size: 15px; font-weight: bold; max-width: 80%;">(Left) Input Manual & Scene, (right) Predicted Assembly Graph</p>
+      <p style="font-size: 15px; max-width: 80%;">Explore a real-time demo of VLM Assembly Graph Generation in our upcoming Jupyter Notebook with your OpenAI API Keys. Stay tuned!</p>
     </div>
 
     <!-- Controls for Object Selection -->
@@ -274,7 +271,7 @@
 </div> -->
 
 <!-- Modified Video Section -->
-<div class="container is-max-desktop">
+<div class="container is-max-desktop section-real-world">
   <div class="columns is-centered">
     <div class="column">
       <h2 class="title is-3 has-text-centered">Real World Demos</h2>
@@ -293,8 +290,8 @@
     </div>
 
     <!-- Thumbnail List Container -->
-    <div class="column is-one-quarter" style="padding: 20px;">
-      <div class="thumbnail-list" style="display: flex; flex-direction: column; gap: 15px;">
+    <div class="column is-one-quarter">
+      <div class="thumbnail-list">
         <!-- Thumbnail Items -->
         <div class="thumbnail-item" 
              data-video-src="./static/videos/Manual2Skill_chair.mp4"
@@ -366,7 +363,7 @@
 </div>
 
 <!-- Generalization Section (Keep as image version) -->
-<div class="container is-max-desktop">
+<div class="container is-max-desktop section-generalize">
   <div class="columns is-centered">
     <div class="column">
       <h2 class="title is-3 has-text-centered">Generalizing Beyond Furniture Assembly</h2>
@@ -377,7 +374,7 @@
     <div class="column is-one-half" style="display: flex; flex-direction: column; align-items: center;">
       <img id="imageViewer" src="./static/images/generalize_robot.png" alt="Selected Image" 
            style="max-width: 80%; height: auto; border: 3px solid #66c0ff; border-radius: 20px;">
-      <p style="font-size: 20px; font-weight: bold;">(Left) Input Manual & Scene, (right) Predicted Assembly Graph</p>
+      <p style="font-size: 15px; font-weight: bold; max-width: 80%;">(Left) Input Manual & Scene, (right) Predicted Assembly Graph</p>
     </div>
 
     <div class="column is-one-quarter">
