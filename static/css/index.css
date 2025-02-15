@@ -1,5 +1,8 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  max-width: 1000px; /* Set your desired max width */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Optional: Add padding for better spacing */
 }
 
 
@@ -181,4 +184,13 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.thumbnail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 300px; /* Adjust this to match your video height */
+  overflow-y: auto;
+  padding-right: 5px; /* Prevents cut-off due to scrollbar */
 }
