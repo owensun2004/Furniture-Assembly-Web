@@ -219,7 +219,7 @@
     </div>
   </div>
 
-  <div class="columns is-centered has-text-centered">
+  <div class="columns is-centered has-text-centered" style="padding: 0; margin: 0;">
     <!-- Image Container -->
     <div class="column is-one-half" style="display: flex; flex-direction: column; align-items: center;">
       <img id="imageViewer2" src="./static/images/another_image1.png" alt="Selected Image" 
@@ -233,7 +233,7 @@
       <!-- Object Name Dropdown -->
       <div class="dropdown-container" style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
         <label for="objectName2" style="font-size: 20px; font-weight: bold;">Furniture To Assemble</label>
-        <select id="objectName2" class="custom-select" style="width: 200px; margin-top: 10px;">
+        <select id="objectName2" class="custom-select" style="width: 200px; margin-top: 10px; border: 2px solid #66c0ff; border-radius: 5px; padding: 5px; color: #333; font-size: 16px;">
           <option value="./static/images/assembly_graph_bench.png">Bench</option>
           <option value="./static/images/assembly_graph_chair.png">Chair</option>
           <!-- <option value="./static/images/another_image3.png">Image 3</option> -->
@@ -280,7 +280,7 @@
 
   <div class="columns is-centered has-text-centered">
     <!-- Video Container -->
-    <div class="column is-one-half" style="display: flex; flex-direction: column; align-items: center;">
+    <div class="column is-one-half" style=" align-items: center;">
       <video id="mainVideoPlayer" controls muted
              style="max-width: 80%; height: auto; border: 3px solid #66c0ff; border-radius: 20px;">
         <source src="./static/videos/Manual2Skill_chair.mp4" type="video/mp4">
@@ -295,17 +295,17 @@
         <!-- Thumbnail Items -->
         <div class="thumbnail-item" 
              data-video-src="./static/videos/Manual2Skill_chair.mp4"
-             style="cursor: pointer; border: 2px solid #ddd; border-radius: 10px; padding: 8px; transition: all 0.3s ease;">
+             style="cursor: pointer; border: 2px solid #ddd; border-radius: 10px; padding: 1px; transition: all 0.3s ease;">
           <img src="./static/images/chair_thumb.png" alt="Chair" 
-               style="width: 50%; height: 50%; object-fit: cover; border-radius: 6px;">
-          <p class="has-text-centered" style="margin-top: 8px; font-weight: bold;">Chair Assembly</p>
+               style="width: 50px; height: 50%; object-fit: cover; border-radius: 6px;">
+          <p class="has-text-centered" style="margin-top: 2px; font-weight: bold;">Chair Assembly</p>
         </div>
 
         <div class="thumbnail-item" 
              data-video-src="./static/videos/Manual2Skill_stool.mp4"
              style="cursor: pointer; border: 2px solid #ddd; border-radius: 10px; padding: 8px; transition: all 0.3s ease;">
           <img src="./static/images/stool_thumb.png" alt="Stool" 
-               style="width: 50%; height: 50%; object-fit: cover; border-radius: 6px;">
+               style="width: 50px; height: 50%; object-fit: cover; border-radius: 6px;">
           <p class="has-text-centered" style="margin-top: 8px; font-weight: bold;">Stool Assembly</p>
         </div>
 
@@ -313,7 +313,7 @@
              data-video-src="./static/videos/Manual2Skill_bench.mp4"
              style="cursor: pointer; border: 2px solid #ddd; border-radius: 10px; padding: 8px; transition: all 0.3s ease;">
           <img src="./static/images/shelf_thumb.png" alt="Shelf" 
-               style="width: 50%; height: 50%; object-fit: cover; border-radius: 6px;">
+               style="width: 50px; height: 50%; object-fit: cover; border-radius: 6px;">
           <p class="has-text-centered" style="margin-top: 8px; font-weight: bold;">Shelf Assembly</p>
         </div>
 
@@ -321,7 +321,7 @@
              data-video-src="./static/videos/Manual2Skill_box.mp4"
              style="cursor: pointer; border: 2px solid #ddd; border-radius: 10px; padding: 8px; transition: all 0.3s ease;">
           <img src="./static/images/box_thumb.png" alt="Box" 
-               style="width: 50%; height: 50%; object-fit: cover; border-radius: 6px;">
+               style="width: 50px; height: 50%; object-fit: cover; border-radius: 6px;">
           <p class="has-text-centered" style="margin-top: 8px; font-weight: bold;">Box Assembly</p>
         </div>
       </div>
@@ -380,7 +380,7 @@
     <div class="column is-one-quarter">
       <div class="dropdown-container" style="text-align: center; margin-top: 10px; margin-bottom: 20px;">
         <label for="objectName" style="font-size: 20px; font-weight: bold;">Object To Assemble</label>
-        <select id="objectName" class="custom-select" style="width: 200px; margin-top: 10px;">
+        <select id="objectName" class="custom-select" style="width: 200px; margin-top: 10px; border: 2px solid #66c0ff; border-radius: 5px; padding: 5px; color: #333; font-size: 16px;">
           <option value="./static/images/generalize_robot.png">Robot Gripper</option>
           <option value="./static/images/generalize_plane.png">Plane Model</option>
           <option value="./static/images/generalize_wheel.png">Wheel Axel</option>

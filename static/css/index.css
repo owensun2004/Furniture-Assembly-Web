@@ -187,9 +187,8 @@ body {
 }
 
 .thumbnail-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
+
   max-height: 300px; /* Adjust this to match your video height */
   overflow-y: auto;
   padding-right: 5px; /* Prevents cut-off due to scrollbar */
