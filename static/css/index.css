@@ -206,3 +206,10 @@ body {
 .section-generalize {
   margin-bottom: 5rem;
 }
+
+.conference-title {
+  font-size: 1.5rem;  /* Makes the text larger */
+  font-weight: bold;  /* Makes the text bold */
+  margin: 1rem 0;  /* Adds some vertical spacing */
+  color: #333;  /* Optional: changes the color to dark gray */
+}
